@@ -1,1 +1,329 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Remove default list styles */
+ul, ol {
+  list-style: none;
+}
+
+/* Remove default link styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Remove default button styles */
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+}
+
+/* Remove default input styles */
+input, textarea, select {
+  font: inherit;
+}
+
+/* Remove default table styles */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Remove default fieldset styles */
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Remove default legend styles */
+legend {
+  padding: 0;
+}
+
+/* Remove default hr styles */
+hr {
+  border: none;
+  border-top: 1px solid currentColor;
+  margin: 1em 0;
+}
+
+/* Remove default img styles */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Remove default figure styles */
+figure {
+  margin: 0;
+}
+
+/* Remove default blockquote styles */
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove default pre styles */
+pre {
+  margin: 0;
+  font-family: inherit;
+}
+
+/* Remove default code styles */
+code {
+  font-family: inherit;
+}
+
+/* Remove default kbd styles */
+kbd {
+  font-family: inherit;
+}
+
+/* Remove default samp styles */
+samp {
+  font-family: inherit;
+}
+
+/* Remove default small styles */
+small {
+  font-size: inherit;
+}
+
+/* Remove default sub and sup styles */
+sub, sup {
+  font-size: inherit;
+  line-height: inherit;
+  vertical-align: baseline;
+}
+
+/* Remove default details styles */
+details {
+  display: block;
+}
+
+/* Remove default summary styles */
+summary {
+  display: list-item;
+}
+
+/* Remove default dialog styles */
+dialog {
+  padding: 0;
+  border: none;
+}
+
+/* Remove default meter styles */
+meter {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+/* Remove default progress styles */
+progress {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+/* Remove default select styles */
+select {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+/* Remove default textarea styles */
+textarea {
+  resize: vertical;
+}
+
+/* Remove default input styles */
+input[type="search"] {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Remove default color input styles */
+input[type="color"] {
+  -webkit-appearance: none;
+  appearance: none;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+}
+
+/* Remove default file input styles */
+input[type="file"] {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+/* Remove default range input styles */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+/* Remove default checkbox and radio styles */
+input[type="checkbox"],
+input[type="radio"] {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+/* Remove default button styles */
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+/* Remove default fieldset styles */
+fieldset {
+  min-width: 0;
+}
+
+/* Remove default legend styles */
+legend {
+  width: 100%;
+}
+
+/* Remove default table styles */
+table {
+  width: 100%;
+}
+
+/* Remove default caption styles */
+caption {
+  text-align: left;
+}
+
+/* Remove default th styles */
+th {
+  text-align: left;
+  font-weight: normal;
+}
+
+/* Remove default td styles */
+td {
+  text-align: left;
+}
+
+/* Remove default thead styles */
+thead {
+  display: table-header-group;
+}
+
+/* Remove default tbody styles */
+tbody {
+  display: table-row-group;
+}
+
+/* Remove default tfoot styles */
+tfoot {
+  display: table-footer-group;
+}
+
+/* Remove default tr styles */
+tr {
+  display: table-row;
+}
+
+/* Remove default th and td styles */
+th, td {
+  display: table-cell;
+}
+
+/* Remove default col styles */
+col {
+  display: table-column;
+}
+
+/* Remove default colgroup styles */
+colgroup {
+  display: table-column-group;
+}
+
+/* Remove default caption styles */
+caption {
+  display: table-caption;
+}
+
+/* Remove default thead styles */
+thead {
+  display: table-header-group;
+}
+
+/* Remove default tbody styles */
+tbody {
+  display: table-row-group;
+}
+
+/* Remove default tfoot styles */
+tfoot {
+  display: table-footer-group;
+}
+
+/* Remove default tr styles */
+tr {
+  display: table-row;
+}
+
+/* Remove default th and td styles */
+th, td {
+  display: table-cell;
+}
+
+/* Remove default col styles */
+col {
+  display: table-column;
+}
+
+/* Remove default colgroup styles */
+colgroup {
+  display: table-column-group;
+}
+
+/* Remove default caption styles */
+caption {
+  display: table-caption;
+}
