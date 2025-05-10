@@ -48,12 +48,14 @@
                   "maximumError": "12kb"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "baseHref": "/portfolio-website"
             },
             "development": {
               "optimization": false,
               "extractLicenses": false,
-              "sourceMap": true
+              "sourceMap": true,
+              "baseHref": "/"
             }
           },
           "defaultConfiguration": "production"
