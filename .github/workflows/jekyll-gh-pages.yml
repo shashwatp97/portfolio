@@ -1,9 +1,8 @@
-name: Deploy Angular App to GitHub Pages
+name: Deploy Angular 18 App to GitHub Pages
 
 on:
   push:
-    branches:
-      - master
+    branches: [master]
   workflow_dispatch:
 
 permissions:
@@ -18,7 +17,6 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -32,7 +30,7 @@ jobs:
         run: npm ci
 
       - name: Build Angular app
-        run: npx ng build portfolio --configuration production
+        run: npx ng build --configuration production
 
       - name: 👀 List build output
         run: ls -R dist/portfolio
@@ -40,12 +38,11 @@ jobs:
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: dist/portfolio
+          path: dist/portfolio/browser  # ✅ Angular 18 puts build files here
 
   deploy:
     needs: build
     runs-on: ubuntu-latest
-
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
