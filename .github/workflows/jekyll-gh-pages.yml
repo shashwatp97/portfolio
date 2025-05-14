@@ -2,7 +2,8 @@ name: Deploy Angular App to GitHub Pages
 
 on:
   push:
-    branches: ["master"]
+    branches:
+      - master
   workflow_dispatch:
 
 permissions:
@@ -28,19 +29,23 @@ jobs:
           node-version: 18
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Build Angular app
         run: npx ng build portfolio --configuration production
 
+      - name: 👀 List build output
+        run: ls -R dist/portfolio
+
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: dist/portfolio  # Don't rename the artifact!
+          path: dist/portfolio
 
   deploy:
     needs: build
     runs-on: ubuntu-latest
+
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
